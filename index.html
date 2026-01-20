@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EDGE 2026 | Praxis Business School</title>
+
+  <!-- Google Font close to poster typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --praxis-red:#8f1d1d;
+      --praxis-dark:#5c0f0f;
+      --light-bg:#f7f7f7;
+    }
+
+    *{box-sizing:border-box;}
+
+    body{
+      margin:0;
+      font-family:'Montserrat', sans-serif;
+      background:#eaeaea;
+      color:#222;
+    }
+
+    .page{
+      max-width:1200px;
+      margin:0 auto;
+      background:#fff;
+    }
+
+    /* ===== HEADER ===== */
+    .header{
+      display:grid;
+      grid-template-columns: 58% 42%;
+      padding:40px 40px 20px;
+      gap:30px;
+      align-items:center;
+    }
+
+    .logos{
+      display:flex;
+      gap:25px;
+      align-items:center;
+      margin-bottom:20px;
+    }
+
+    .logos img{
+      height:48px;
+      object-fit:contain;
+    }
+
+    .conf-title h1{
+      margin:0;
+      font-size:44px;
+      font-weight:800;
+      color:var(--praxis-red);
+      letter-spacing:1px;
+    }
+
+    .conf-title h2{
+      margin:6px 0 10px;
+      font-size:22px;
+      font-weight:600;
+    }
+
+    .conf-title p{
+      margin:6px 0 18px;
+      font-size:15px;
+    }
+
+    .meta{
+      font-size:15px;
+      font-weight:600;
+      line-height:1.8;
+    }
+
+    .hero{
+      width:100%;
+      border-radius:6px;
+      object-fit:cover;
+    }
+
+    /* ===== THEME STRIP ===== */
+    .theme{
+      background:var(--praxis-red);
+      color:#fff;
+      text-align:center;
+      padding:18px 10px;
+      font-size:22px;
+      font-weight:700;
+      letter-spacing:0.5px;
+    }
+
+    /* ===== CONTENT ===== */
+    .content{
+      display:grid;
+      grid-template-columns: 55% 45%;
+      gap:30px;
+      padding:40px;
+    }
+
+    .card-red{
+      background:var(--praxis-red);
+      color:#fff;
+      padding:32px;
+      border-radius:18px;
+    }
+
+    .card-red h3,
+    .card-white h3{
+      margin-top:0;
+      font-size:22px;
+      font-weight:700;
+      letter-spacing:0.5px;
+    }
+
+    .card-red p{
+      font-size:14px;
+      line-height:1.6;
+    }
+
+    .topics ul{
+      padding-left:18px;
+      margin:10px 0 20px;
+    }
+
+    .topics li{
+      margin-bottom:8px;
+      font-size:14px;
+    }
+
+    .fees p{
+      margin:6px 0;
+      font-size:14px;
+      font-weight:500;
+    }
+
+    .card-white{
+      background:#fff;
+      padding:32px;
+      border-radius:18px;
+      border:2px solid var(--praxis-red);
+    }
+
+    .card-white p, .card-white li{
+      font-size:14px;
+      line-height:1.6;
+    }
+
+    .card-white ul{
+      padding-left:18px;
+    }
+
+    /* ===== FOOTER ===== */
+    footer{
+      text-align:center;
+      padding:20px;
+      font-size:13px;
+      background:#f3f3f3;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media(max-width:900px){
+      .header,
+      .content{
+        grid-template-columns:1fr;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div>
+      <div class="logos">
+        <!-- Replace these with actual logo files -->
+        <img src="logo-praxis.png" alt="Praxis">
+        <img src="logo-stpi.png" alt="STPI">
+        <img src="logo-iic.png" alt="IIC">
+      </div>
+
+      <div class="conf-title">
+        <h1>EDGE 2026</h1>
+        <h2>Explorations in Digital Global Environment</h2>
+        <p>The First International Conference by Praxis Business School</p>
+      </div>
+
+      <div class="meta">
+        📅 18 April 2026<br>
+        📍 STPI Auditorium, Sector V, Salt Lake
+      </div>
+    </div>
+
+    <img src="campus.jpg" alt="Praxis Campus" class="hero">
+  </div>
+
+  <!-- THEME -->
+  <div class="theme">
+    THEME: “REIMAGINING MANAGEMENT IN THE DIGITAL ERA”
+  </div>
+
+  <!-- CONTENT -->
+  <div class="content">
+
+    <div class="card-red">
+      <h3>ABOUT THE CONFERENCE</h3>
+      <p>Praxis Business School is pleased to announce its International Conference EDGE 2026.</p>
+      <p>The conference is held under the patronage of <strong>Prof. Prithwis Mukherjee</strong>, Director, Praxis Business School.</p>
+      <p><strong>Conference Chair:</strong> Prof. Jaydip Sen</p>
+
+      <div class="topics">
+        <h3>TOPICS</h3>
+        <ul>
+          <li>Digital Marketing & Consumer Insights</li>
+          <li>Finance & FinTech</li>
+          <li>HR & Future of Work</li>
+          <li>Business Analytics & AI</li>
+          <li>Sustainability, Ethics & Governance</li>
+          <li>Economics & Public Policy</li>
+        </ul>
+      </div>
+
+      <h3>REGISTRATION FEES</h3>
+      <div class="fees">
+        <p>Industry participants: ₹ 2,500</p>
+        <p>Academia: ₹ 1,500</p>
+        <p>Research scholars & students: ₹ 500</p>
+      </div>
+    </div>
+
+    <div class="card-white">
+      <h3>CALL FOR PAPERS</h3>
+      <p>The conference invites participants to submit an <strong>extended abstract (maximum 1500 words)</strong>.</p>
+      <p>Submissions are open to scholars and practitioners across disciplines.</p>
+      <p><strong>Email:</strong> conference@praxis.ac.in</p>
+      <ul>
+        <li>Last date of submission: <strong>March 15, 2026</strong></li>
+        <li>Result announcement: <strong>April 2, 2026</strong></li>
+        <li>Last date of registration: <strong>April 10, 2026</strong></li>
+      </ul>
+      <p><em>Accepted papers will be published in Praxis Journal / edited volume. Selected papers may be considered for ABDC and Scopus-indexed journals, subject to review.</em></p>
+    </div>
+
+  </div>
+
+  <footer>
+    © 2026 Praxis Business School | www.praxis.ac.in
+  </footer>
+
+</div>
+
+</body>
+</html>
